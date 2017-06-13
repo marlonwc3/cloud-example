@@ -1,3 +1,8 @@
+build:
+    steps:
+        - mkdir /build
+        - cp hello.py /build/hello.py
+    output_dir: /build
 test:
     dependent_images:
         - tutum/hello-world
@@ -7,4 +12,5 @@ user_acceptance:
     project_language: python
     min_coverage: 80
 production:
-    run_cmd: python hello.py
+    run_steps:
+        - python hello.py
