@@ -1,3 +1,10 @@
-rootA:
-    rootB:
-        - myExample
+test:
+    dependent_images:
+        - tutum/hello-world
+    run_steps:
+        - python hello.py
+user_acceptance:
+    project_language: python
+    min_coverage: 80
+production:
+    run_cmd: python hello.py
