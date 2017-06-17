@@ -1,17 +1,11 @@
-build:
-    steps:
-        - mkdir /build
-        - cp hello.py /build/hello.py
-    output_dir: /build
+production:
+    dependencies:
+        - tumtum/hello-world
+    dockerfile: Dockerfile
 test:
-    dependent_images:
+    depedencies:
         - tutum/hello-world
-    run_steps:
-        - python hello.py
+    dockerfile: TestDockerfile
 user_acceptance:
     project_language: python
-    min_coverage: 80
-production:
-    run_steps:
-        - python hello.py
-    
+    min_coverage: 80   
