@@ -2,11 +2,11 @@ production:
     dependencies:
         - tumtum/hello-world
     dockerfile: Dockerfile
-    tag: cloudexample
+    tag: images/cloudexample
 test:
     dependencies:
         - tutum/hello-world
-    dockerfile: TestDockerfile
+    dockerfile: images/TestDockerfile
     tag: cloudexample
 user_acceptance:
     project_language: python
