@@ -4,7 +4,7 @@ production:
     dockerfile: Dockerfile
     tag: cloudexample
 test:
-    depedencies:
+    dependencies:
         - tutum/hello-world
     dockerfile: TestDockerfile
     tag: cloudexample
