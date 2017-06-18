@@ -2,12 +2,12 @@ production:
     dependencies:
         - tumtum/hello-world
     dockerfile: images/Dockerfile
-    tag: marlonalves/cloudexample
+    tag: marlonalves/cloudexample-prod
 test:
     dependencies:
         - tutum/hello-world
     dockerfile: images/TestDockerfile
-    tag: marlonalves/cloudexample
+    tag: marlonalves/cloudexample-test
 user_acceptance:
     project_language: python
     min_coverage: 80   
