@@ -1,4 +1,3 @@
 FROM python:2.7-slim
 COPY . .
 CMD python hello_tests.py
-CMD AMBACAL 1
