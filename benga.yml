@@ -3,13 +3,13 @@ production:
         - tumtum/hello-world
     dockerfile: images/Dockerfile
     tag: cloudexample
-    repository: marlonwc3
+    repository: marlonalves
 test:
     dependencies:
         - tutum/hello-world
     dockerfile: images/TestDockerfile
     tag: cloudexample
-    repository: marlonwc3
+    repository: marlonalves
 user_acceptance:
     project_language: python
     min_coverage: 80   
