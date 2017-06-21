@@ -2,7 +2,6 @@ production:
     dependencies:
         - tumtum/hello-world
     dockerfile: images/Dockerfile
-    run_args: -p 0.0.0.0:5000:5000
     tag: marlonalves/cloudexample-prod
 test:
     dependencies:
